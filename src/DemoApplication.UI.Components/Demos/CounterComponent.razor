@@ -7,8 +7,15 @@
 @code {
     private int currentCount = 0;
 
-    private void IncrementCount()
+    /// <summary>
+    /// An optional call back method that will be executed when the increment action is completed inside of this component
+    /// </summary>
+    [Parameter]
+    public EventCallback<int> OnIncrementCallback { get; set; }
+
+    private async Task IncrementCount()
     {
         currentCount++;
+        await OnIncrementCallback.InvokeAsync(currentCount);
     }
 }

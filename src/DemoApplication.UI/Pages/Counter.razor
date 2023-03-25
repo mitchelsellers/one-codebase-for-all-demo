@@ -1,3 +1,11 @@
 ﻿@page "/counter"
 
-<DemoApplication.UI.Components.Demos.CounterComponent />
+<DemoApplication.UI.Components.Demos.CounterComponent OnIncrementCallback="CountIncremented" />
+
+@code{
+
+    public void CountIncremented(int newValue)
+    {
+        //TODO: Do something here
+    }
+}
