@@ -1,4 +1,4 @@
-namespace DemoApplication.UI.Data
+﻿namespace DemoApplication.UI.Components.Data
 {
     public class WeatherForecast
     {

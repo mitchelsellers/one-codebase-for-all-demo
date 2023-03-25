@@ -1,4 +1,4 @@
-﻿using DemoApplication.UI.Data;
+﻿using DemoApplication.UI.Components.Data;
 using Microsoft.Extensions.Logging;
 
 namespace DemoApplication.UI
@@ -22,6 +22,7 @@ namespace DemoApplication.UI
 		builder.Logging.AddDebug();
 #endif
 
+            //This is coming in from the service
             builder.Services.AddSingleton<WeatherForecastService>();
 
             return builder.Build();

@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\DemoApplication.UI.Components\DemoApplication.UI.Components.csproj" />
     <ProjectReference Include="..\Shared\DemoApplication.UI.WebAssembly.Shared.csproj" />
   </ItemGroup>
 
